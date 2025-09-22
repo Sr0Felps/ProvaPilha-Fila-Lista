@@ -1,9 +1,49 @@
-Um programa de gerenciamento de biblioteca, ele armazena os livros que estão no estoque e coloca livros a serem comprados em uma fila de desejos para o acervo da própria biblioteca. 
+Sistema de Gestão de Cadastros de Livros
+Este projeto é um programa em Java que simula um sistema de gestão de cadastros de livros. Ele utiliza conceitos de Programação Orientada a Objetos (POO) e estruturas de dados como Lista Duplamente Encadeada e Fila para demonstrar a manipulação de dados.
 
-Foi utilizado Interfaces e classes para o funcionamento da MAIN.
+Requisitos Técnicos
+O programa usa interfaces e classes de acordo com o modelo de Tipo Abstrato de Dados (TAD).
 
-Na MAIN ao se rodar o programa:
-O programa faz uma série de comandos como inserções, buscas e remoções que mudam a situação do estoque.
-Quando o livro é adquirido pela biblioteca, ele sai da fila e entra na lista.
-Quando se quer fazer uma busca no estoque, é fornecido o ID do livro que compara com o ID de todos os livros até acha-lo e mostra suas informações no teminal.
+Ele contém duas implementações de estruturas de dados: ListaDuplamenteEncadeada e Fila.
 
+O programa mede e exibe o tempo de execução das buscas.
+
+Estrutura do Projeto
+O código está organizado nos seguintes pacotes:
+
+iClasse: Interfaces do projeto (FilaInterface e ListaInterface).
+
+classe: Classes de implementação (Fila, ListaDuplamenteEncadeada, Livro).
+
+nodes: Classe para os nós da lista (NoDuplo).
+
+teste: Classe principal com a lógica do programa (Main).
+
+Funcionalidades
+O sistema de gestão de livros executa as seguintes operações:
+
+Inserir: Adiciona novos elementos nas estruturas de dados.
+
+Remover: Remove elementos usando as regras FIFO (Fila) e LIFO (Pilha), ou as regras da lista.
+
+Buscar: Procura um elemento pelo seu ID ou nome, exibindo o resultado e o tempo de execução.
+
+Como Executar
+Pré-requisito: Certifique-se de ter o JDK (Java Development Kit) instalado.
+
+Executar:
+
+Abra o projeto em uma IDE Java (como IntelliJ, Eclipse, ou VS Code).
+
+Vá para a classe Main.java dentro do pacote teste.
+
+Execute a classe Main. A saída com os resultados será exibida no console.
+
+Saída Esperada
+A execução do programa irá mostrar no console:
+
+A lista de todos os elementos cadastrados em cada estrutura.
+
+O resultado da busca, junto com o tempo gasto.
+
+O estado da estrutura após a remoção de elementos.
