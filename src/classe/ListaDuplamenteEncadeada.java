@@ -1,11 +1,12 @@
-package com.aula.classe;
+package classe;
 
-import com.aula.iClasse.Lista;
-import com.aula.nodes.NoDuplo;
+import iClasse.ListaInterface;
+
+import nodes.NoDuplo;
 
 import java.util.NoSuchElementException;
 
-public class ListaDuplamenteEncadeada<T> implements Lista<T> {
+public class ListaDuplamenteEncadeada<T> implements ListaInterface<T> {
     private NoDuplo<T> inicio; //cabeça (head)
     private NoDuplo<T> fim; //cauda (tail)
     private Integer tamanho;

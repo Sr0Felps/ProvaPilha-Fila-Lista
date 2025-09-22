@@ -1,6 +1,6 @@
 package iClasse;
 
-public interface Lista<T> {
+public interface ListaInterface<T> {
     void inserirInicio(T item);
     void inserirFim(T item);
     void inserirPosicao(Integer indice, T item);

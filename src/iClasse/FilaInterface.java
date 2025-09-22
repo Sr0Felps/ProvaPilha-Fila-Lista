@@ -1,3 +1,5 @@
+package iClasse;
+
 public interface FilaInterface<T> {
     void enfileirar(T item);
     T desenfileirar();

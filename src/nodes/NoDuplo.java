@@ -1,4 +1,4 @@
-package com.aula.nodes;
+package nodes;
 
 public class NoDuplo<T> {
     private T dado;

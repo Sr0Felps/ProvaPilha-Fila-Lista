@@ -1,3 +1,7 @@
+package classe;
+
+import iClasse.FilaInterface;
+
 import java.util.NoSuchElementException;
 
 public class Fila<T> implements FilaInterface<T> {
