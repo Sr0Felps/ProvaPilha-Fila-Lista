@@ -33,14 +33,18 @@ public class Main {
         aquisicoesFuturas.enfileirar(livro5);
 
         //Tirando o livro 4 e 5 da fila e colocando na lista (O livro foi adquirido pela biblioteca)
-        listaDeLivros.inserirFim(aquisicoesFuturas.desenfileirar());
-        listaDeLivros.inserirFim(aquisicoesFuturas.desenfileirar());
+        listaDeLivros.inserirFim((Livro) aquisicoesFuturas.desenfileirar());
+        listaDeLivros.inserirFim((Livro) aquisicoesFuturas.desenfileirar());
+
+
+        //Buscando um livro na lista pelo ID e msotrando suas informacoes
+        buscarLivro(2, listaDeLivros);
+        buscarLivro(4, listaDeLivros);
+        buscarLivro(1, listaDeLivros);
 
         //Removendo um livro do início da lista
         listaDeLivros.removerInicio();
 
-        //Buscando um livro na lista pelo ID e msotrando suas informacoes
-        buscarLivro(2, listaDeLivros);
 
     }
 
